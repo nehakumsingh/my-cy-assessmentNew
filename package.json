@@ -4,12 +4,7 @@
   "description": "User should be add an arbitary amount of items to the cart and complete the checkout process.",
   "main": "index.js",
   "scripts": {
-    "pretest": "rimraf cypress/reports",
-    "test": "npm run cypress-test || npm run posttest",
-    "cypress-test": "cypress run",
-    "posttest": "npm run  merge-reports && npm run generate-htmlreport",
-    "merge-reports": "mochawesome-merge ./cypress/reports/*.json > ./reportmain.json",
-    "generate-htmlreport": "marge ./reportmain.json --reportDir cypress/reports --inline"
+    "pretest": "rimraf cypress/reports"
   },
   "author": "",
   "license": "ISC",
