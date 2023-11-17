@@ -9,13 +9,13 @@ jobs:
       image: cypress/browsers:latest
       options: --user 1001
     steps: 
-
+    - name: Checkout
+      uses: actions/checkout@v4
+      
     - name: Cypress run pretest
       uses: cypress-io/github-action@v6
       with:
-        command: npm run pretest
-    - name: Checkout
-      uses: actions/checkout@v4
+        command: npm run pretest   
 
     - name: Cypress run
       uses: cypress-io/github-action@v6
