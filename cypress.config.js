@@ -7,7 +7,7 @@ module.exports = defineConfig({
   charts: true,
   reportPageTitle: 'Cypress Inline Reporter',
   embeddedScreenshots: true,
-  reportDir: "cypress/report",
+  reportDir: "cypress/reports",
   inlineAssets: true, //Adds the asserts inline
  },
 
